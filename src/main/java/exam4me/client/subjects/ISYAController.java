@@ -1,7 +1,8 @@
-package exam4me.client;
+package exam4me.client.subjects;
 
-import exam4me.domain.year.ThirdYear;
-import exam4me.services.ThirdYearService;
+import exam4me.domain.subjects.IRP;
+import exam4me.domain.subjects.ISYA;
+import exam4me.services.ISYAService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -16,21 +17,21 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-public class ThirdYearController {
+public class ISYAController {
 
     @Autowired
-    ThirdYearService thirdYearService;
+    ISYAService isyaService;
 
-    @RequestMapping(value = "/student/{student_number}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ThirdYear> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
+    @RequestMapping(value = "/student/isya/{student_number}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<ISYA> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
 
-        ThirdYear thirdYear = thirdYearService.readById(studentNumber);
+        ISYA isya = isyaService.readById(studentNumber);
 
-        if (thirdYear == null) {
+        if (isya == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(thirdYear, HttpStatus.OK);
+        return new ResponseEntity<>(isya, HttpStatus.OK);
 
     }
 }

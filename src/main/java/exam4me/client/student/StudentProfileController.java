@@ -1,4 +1,4 @@
-package exam4me.client;
+package exam4me.client.student;
 
 import exam4me.domain.student.StudentProfile;
 import exam4me.services.StudentProfileService;
