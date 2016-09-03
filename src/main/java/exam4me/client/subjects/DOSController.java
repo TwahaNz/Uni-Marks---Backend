@@ -22,7 +22,7 @@ public class DOSController {
     @Autowired
     DOSService dosService;
 
-    @RequestMapping(value = "/student/dos/{student_number}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/student/dos/{studentNumber}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<DOS> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
 
         DOS dos = dosService.readById(studentNumber);

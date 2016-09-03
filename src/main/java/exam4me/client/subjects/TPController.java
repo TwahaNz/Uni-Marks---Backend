@@ -22,7 +22,7 @@ public class TPController {
     @Autowired
     TPService tpService;
 
-    @RequestMapping(value = "/student/tp/{student_number}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/student/tp/{studentNumber}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<TP> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
 
         TP tp = tpService.readById(studentNumber);

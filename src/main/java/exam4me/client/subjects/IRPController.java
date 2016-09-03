@@ -23,7 +23,7 @@ public class IRPController {
     @Autowired
     IRPService irpService;
 
-    @RequestMapping(value = "/student/irp/{student_number}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/student/irp/{studentNumber}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<IRP> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
 
         IRP irp = irpService.readById(studentNumber);

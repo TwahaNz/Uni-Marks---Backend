@@ -23,7 +23,7 @@ public class ISYBController {
     @Autowired
     ISYBService isybService;
 
-    @RequestMapping(value = "/student/isyb/{student_number}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/student/isyb/{studentNumber}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ISYB> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
 
         ISYB isyb = isybService.readById(studentNumber);

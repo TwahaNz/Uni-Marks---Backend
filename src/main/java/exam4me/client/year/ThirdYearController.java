@@ -22,7 +22,7 @@ public class ThirdYearController {
     @Autowired
     ThirdYearService thirdYearService;
 
-    @RequestMapping(value = "/student/{studentNumber}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/student/thirdyear/ds/{studentNumber}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ThirdYear> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
 
         ThirdYear thirdYear = thirdYearService.readById(studentNumber);
