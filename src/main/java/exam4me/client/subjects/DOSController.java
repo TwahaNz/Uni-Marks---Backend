@@ -23,7 +23,8 @@ public class DOSController {
     DOSService dosService;
 
     @RequestMapping(value = "/student/dos/{studentNumber}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<DOS> getStudentAccount(@PathVariable("studentNumber") String studentNumber) {
+    public ResponseEntity<DOS> getStudentAccountcleaer
+            (@PathVariable("studentNumber") String studentNumber) {
 
         DOS dos = dosService.readById(studentNumber);
 

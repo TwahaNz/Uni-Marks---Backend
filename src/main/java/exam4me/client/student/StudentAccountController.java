@@ -2,6 +2,7 @@ package exam4me.client.student;
 
 import exam4me.domain.student.StudentAccount;
 import exam4me.services.StudentAccountService;
+import exam4me.services.others.CustomConnection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -50,6 +51,16 @@ public class StudentAccountController {
 
     }
 
+    @RequestMapping(value = "/studentAccount/", method = RequestMethod.POST)
+    public ResponseEntity<StudentAccount> getStudentAccountByDetails(@RequestBody StudentAccount studentAccount, UriComponentsBuilder ucBuilder) {
+
+        studentAccount = CustomConnection.find_by_details(studentAccount.getStudentEmail(), studentAccount.getStudentPassword());
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setLocation(ucBuilder.path("/studentAccount/{id}").buildAndExpand(studentAccount.getId()).toUri());
+
+        return new ResponseEntity<>(studentAccount, HttpStatus.CREATED);
+    }
 
     //-------------------Retrieve All StudentAccounts--------------------------------------------------------
 
