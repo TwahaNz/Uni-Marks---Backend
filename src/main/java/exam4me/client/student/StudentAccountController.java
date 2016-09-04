@@ -56,8 +56,8 @@ public class StudentAccountController {
 
         studentAccount = CustomConnection.find_by_details(studentAccount.getStudentEmail(), studentAccount.getStudentPassword());
 
-        HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(ucBuilder.path("/studentAccount/{id}").buildAndExpand(studentAccount.getId()).toUri());
+//        HttpHeaders headers = new HttpHeaders();
+//       headers.setLocation(ucBuilder.path("/studentAccount/{id}").buildAndExpand(studentAccount.getId()).toUri());
 
         return new ResponseEntity<>(studentAccount, HttpStatus.CREATED);
     }

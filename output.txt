@@ -1,0 +1,85 @@
+2016-09-03 17:48:48.454  INFO 6552 --- [           main] exam4me.App                              : Starting App v1.0-SNAPSHOT on tnz-debian-ny with PID 6552 (/home/tnz/test/Uni-Marks---Backend/target/com.tnz.app-1.0-SNAPSHOT.jar started by tnz in /home/tnz/test/Uni-Marks---Backend)
+2016-09-03 17:48:48.468  INFO 6552 --- [           main] exam4me.App                              : No active profile set, falling back to default profiles: default
+2016-09-03 17:48:48.703  INFO 6552 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b71fc7e: startup date [Sat Sep 03 17:48:48 EDT 2016]; root of context hierarchy
+2016-09-03 17:48:54.307  INFO 6552 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e9d3438] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-03 17:48:55.751  INFO 6552 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-09-03 17:48:55.804  INFO 6552 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-03 17:48:55.811  INFO 6552 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.36
+2016-09-03 17:48:56.121  INFO 6552 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-03 17:48:56.122  INFO 6552 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7431 ms
+2016-09-03 17:48:57.231  INFO 6552 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-03 17:48:57.241  INFO 6552 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-03 17:48:57.245  INFO 6552 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-03 17:48:57.246  INFO 6552 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-03 17:48:57.246  INFO 6552 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-03 17:48:57.947  INFO 6552 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-03 17:48:57.974  INFO 6552 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-09-03 17:48:58.200  INFO 6552 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-09-03 17:48:58.206  INFO 6552 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-03 17:48:58.208  INFO 6552 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-03 17:48:59.220  INFO 6552 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-09-03 17:48:59.994  INFO 6552 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-09-03 17:49:00.337  INFO 6552 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-09-03 17:49:00.859  INFO 6552 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: exam4me.domain.subjects.ISYA (class must be instantiated by Interceptor)
+2016-09-03 17:49:00.868  INFO 6552 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: exam4me.domain.subjects.ISYB (class must be instantiated by Interceptor)
+2016-09-03 17:49:00.879  INFO 6552 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: exam4me.domain.subjects.DOS (class must be instantiated by Interceptor)
+2016-09-03 17:49:00.887  INFO 6552 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: exam4me.domain.subjects.IRP (class must be instantiated by Interceptor)
+2016-09-03 17:49:00.896  INFO 6552 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: exam4me.domain.year.ThirdYear (class must be instantiated by Interceptor)
+2016-09-03 17:49:00.906  INFO 6552 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: exam4me.domain.subjects.TP (class must be instantiated by Interceptor)
+2016-09-03 17:49:01.132  INFO 6552 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+Hibernate: drop table if exists dos
+Hibernate: drop table if exists irp
+Hibernate: drop table if exists isya
+Hibernate: drop table if exists isyb
+Hibernate: drop table if exists student_account
+Hibernate: drop table if exists student_profile
+Hibernate: drop table if exists third_year
+Hibernate: drop table if exists tp
+Hibernate: create table dos (student_number varchar(255) not null, term1 varchar(255), term2 varchar(255), term3 varchar(255), term4 varchar(255), primary key (student_number))
+Hibernate: create table irp (student_number varchar(255) not null, term1 varchar(255), term2 varchar(255), term3 varchar(255), term4 varchar(255), primary key (student_number))
+Hibernate: create table isya (student_number varchar(255) not null, term1 varchar(255), term2 varchar(255), term3 varchar(255), term4 varchar(255), primary key (student_number))
+Hibernate: create table isyb (student_number varchar(255) not null, term1 varchar(255), term2 varchar(255), term3 varchar(255), term4 varchar(255), primary key (student_number))
+Hibernate: create table student_account (id bigint not null auto_increment, student_email varchar(255), student_password varchar(255), primary key (id))
+Hibernate: create table student_profile (id bigint not null auto_increment, cellphone varchar(255), class_group varchar(255), name varchar(255), surname varchar(255), primary key (id))
+Hibernate: create table third_year (student_number varchar(255) not null, primary key (student_number))
+Hibernate: create table tp (student_number varchar(255) not null, term1 varchar(255), term2 varchar(255), term3 varchar(255), term4 varchar(255), primary key (student_number))
+2016-09-03 17:49:01.203  INFO 6552 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-09-03 17:49:03.125  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b71fc7e: startup date [Sat Sep 03 17:48:48 EDT 2016]; root of context hierarchy
+2016-09-03 17:49:03.377  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/thirdyear/ds/{studentNumber}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.year.ThirdYear> exam4me.client.year.ThirdYearController.getStudentAccount(java.lang.String)
+2016-09-03 17:49:03.381  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/tp/{studentNumber}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.subjects.TP> exam4me.client.subjects.TPController.getStudentAccount(java.lang.String)
+2016-09-03 17:49:03.381  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/isya/{studentNumber}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.subjects.ISYA> exam4me.client.subjects.ISYAController.getStudentAccount(java.lang.String)
+2016-09-03 17:49:03.384  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/isyb/{studentNumber}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.subjects.ISYB> exam4me.client.subjects.ISYBController.getStudentAccount(java.lang.String)
+2016-09-03 17:49:03.385  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/dos/{studentNumber}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.subjects.DOS> exam4me.client.subjects.DOSController.getStudentAccountcleaer(java.lang.String)
+2016-09-03 17:49:03.391  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/irp/{studentNumber}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.subjects.IRP> exam4me.client.subjects.IRPController.getStudentAccount(java.lang.String)
+2016-09-03 17:49:03.395  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String exam4me.client.HelloWorld.getValue()
+2016-09-03 17:49:03.395  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/com/tnz/app/exam4me/account/profile],methods=[POST]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.student.StudentProfile> exam4me.client.student.StudentProfileController.createStudentAccount(exam4me.domain.student.StudentProfile,org.springframework.web.util.UriComponentsBuilder)
+2016-09-03 17:49:03.396  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentProfile/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.student.StudentProfile> exam4me.client.student.StudentProfileController.getStudentAccount(long)
+2016-09-03 17:49:03.397  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentAccount/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.student.StudentAccount> exam4me.client.student.StudentAccountController.getStudentAccountByDetails(exam4me.domain.student.StudentAccount,org.springframework.web.util.UriComponentsBuilder)
+2016-09-03 17:49:03.405  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentAccounts/],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.Set<exam4me.domain.student.StudentAccount>> exam4me.client.student.StudentAccountController.getStudentAccounts()
+2016-09-03 17:49:03.406  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentAccount/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.student.StudentAccount> exam4me.client.student.StudentAccountController.updateStudentAccount(long,exam4me.domain.student.StudentAccount)
+2016-09-03 17:49:03.406  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studentAccount/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.student.StudentAccount> exam4me.client.student.StudentAccountController.deleteStudentAccount(long)
+2016-09-03 17:49:03.406  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/com/tnz/app/exam4me/account/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.student.StudentAccount> exam4me.client.student.StudentAccountController.createStudentAccount(exam4me.domain.student.StudentAccount,org.springframework.web.util.UriComponentsBuilder)
+2016-09-03 17:49:03.406  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/student/{id}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<exam4me.domain.student.StudentAccount> exam4me.client.student.StudentAccountController.getStudentAccount(long)
+2016-09-03 17:49:03.419  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-03 17:49:03.420  INFO 6552 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-03 17:49:03.545  INFO 6552 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-03 17:49:03.545  INFO 6552 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-03 17:49:03.680  INFO 6552 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-03 17:49:04.613  INFO 6552 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-03 17:49:04.872  INFO 6552 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-09-03 17:49:04.894  INFO 6552 --- [           main] exam4me.App                              : Started App in 17.724 seconds (JVM running for 18.93)
+2016-09-03 17:49:24.765  INFO 6552 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b71fc7e: startup date [Sat Sep 03 17:48:48 EDT 2016]; root of context hierarchy
+2016-09-03 17:49:24.783  INFO 6552 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-09-03 17:49:24.795  INFO 6552 --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-09-03 17:49:24.795  INFO 6552 --- [       Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+Hibernate: drop table if exists dos
+Hibernate: drop table if exists irp
+Hibernate: drop table if exists isya
+Hibernate: drop table if exists isyb
+Hibernate: drop table if exists student_account
+Hibernate: drop table if exists student_profile
+Hibernate: drop table if exists third_year
+Hibernate: drop table if exists tp
+2016-09-03 17:49:24.825  INFO 6552 --- [       Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete

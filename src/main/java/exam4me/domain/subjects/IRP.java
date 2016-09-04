@@ -16,6 +16,8 @@ public class IRP {
     private String term3;
     private String term4;
 
+    public IRP(){}
+
     public IRP(String studentNumber, String term1, String term2, String term3, String term4) {
         this.studentNumber = studentNumber;
         this.term1 = term1;

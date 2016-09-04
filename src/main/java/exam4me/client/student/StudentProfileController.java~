@@ -58,11 +58,10 @@ public class StudentProfileController {
         if (currentStudentProfile==null) {
             return new ResponseEntity<StudentProfile>(HttpStatus.NOT_FOUND);
         }
-
         StudentProfile updatedStudentProfile = new StudentProfile.Builder()
-                .copyStudentProfile(currentStudentProfile)
-                .setName(studentProfile.getName())
-                .setSurname(studentProfile.getSurname())
+                .copyStudent(currentStudentProfile)
+                .setStudentEmail(studentProfile.getName())
+                .setStudentPassword(studentProfile.getSurname())
                 .build();
 
         studentProfileService.update(updatedStudentProfile);

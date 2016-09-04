@@ -7,7 +7,7 @@ import javax.persistence.Id;
  */
 
 @javax.persistence.Entity
-public class DOS {
+public class ISYA {
 
     @Id
     private String studentNumber;
@@ -16,9 +16,7 @@ public class DOS {
     private String term3;
     private String term4;
 
-    public DOS(){}
-
-    public DOS(String studentNumber, String term1, String term2, String term3, String term4) {
+    public ISYA(String studentNumber, String term1, String term2, String term3, String term4) {
         this.studentNumber = studentNumber;
         this.term1 = term1;
         this.term2 = term2;

@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 mysql test < isya.sql
 mysql test < isyb.sql

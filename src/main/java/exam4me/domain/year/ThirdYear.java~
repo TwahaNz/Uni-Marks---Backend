@@ -12,7 +12,7 @@ public class ThirdYear {
     @Id
     private String studentNumber;
 
-    public ThirdYear(){}
+    public ThridYear(){}
 
     public ThirdYear(String studentNumber) {
         this.studentNumber = studentNumber;

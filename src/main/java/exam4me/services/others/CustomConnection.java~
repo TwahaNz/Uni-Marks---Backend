@@ -25,6 +25,7 @@ public class CustomConnection {
             ResultSet resultset = statement.executeQuery("SELECT * FROM test.student_account WHERE student_email='" +  email + "' AND student_password='" + password + "';");
 
             if (resultset.next()) {
+                connection.close();
                 return StudentAccountFactory.getStudentAccount(resultset.getLong(1), email, password);
             }
 
